@@ -1,0 +1,29 @@
+snippet html5 "html5" b
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>${1}</title>
+</head>
+<body>
+	${0}
+</body>
+</html>
+endsnippet
+
+snippet scriptsrc "script with src" b
+<script`!p snip.rv=' src="' if t[1] else ""`${1:src}`!p snip.rv='"' if t[1] else ""`></script>
+endsnippet
+
+snippet label "label" i
+<label>${1}</label>$0
+endsnippet
+
+snippet input "input" i
+<input type="${1:text}">$0
+endsnippet
+
+snippet span "span" i
+<span>${1}</span>$0
+endsnippet

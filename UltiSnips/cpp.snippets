@@ -1,0 +1,49 @@
+priority -49
+
+extends cpp
+
+# 再次重定義 C++ 設定檔，以下程式碼作為使用者代碼，權限為user預設
+priority 0
+
+# 預設程式碼
+snippet ##
+#include <iostream>
+using namespace std;
+
+int main() {
+	${0}
+	return 0;
+}
+endsnippet
+
+# C++風格的 #include
+snippet inc
+#include <${1:iostream}>
+${0}
+endsnippet
+
+# using 縮寫
+snippet us
+using ${0}
+endsnippet
+
+# namespace 縮寫
+snippet na
+namespace ${0}
+endsnippet
+
+# 我喜歡的main風格
+snippet main
+int main() {
+	${0}
+	return 0;
+}
+endsnippet
+
+# 在很多uva題目中，這個格式非常常用
+snippet whcin
+${1:int} ${2:n};
+while(cin >> $2) {
+	${0}
+}
+endsnippet

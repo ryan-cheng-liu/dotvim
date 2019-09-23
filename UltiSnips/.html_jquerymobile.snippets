@@ -1,0 +1,28 @@
+
+#######################################################################
+#                                 div                                 #
+#######################################################################
+
+snippet "div" "div" r
+<`!p snip.rv=match.group(0);``!p snip.rv=' data-role="' if t[1] else ""`${1:header}`!p snip.rv='"' if t[1] else ""``!p snip.rv=' data-position="' if t[2] else ""`${2:inline}`!p snip.rv = '"' if t[2] else ""``!p snip.rv=' data-fullscreen="' if t[3] else ""`${3:false}`!p snip.rv = '"' if t[3] else ""``!p snip.rv=' id="' if t[4] else ""`${4:name}`!p snip.rv = '"' if t[4] else ""``!p snip.rv=' class="' if t[5] else ""`${5:name}`!p snip.rv = '"' if t[5] else ""`>
+	${VISUAL}$0
+</`!p snip.rv=match.group(0);`>
+endsnippet
+
+snippet "ol|ul" "ol ul" r
+<`!p snip.rv=match.group(0);``!p snip.rv=' data-role="' if t[1] else ""`${1:listview}`!p snip.rv='"' if t[1] else ""``!p snip.rv=' data-inset="' if t[2] else ""`${2:false}`!p snip.rv = '"' if t[2] else ""``!p snip.rv=' data-autodividers="' if t[3] else ""`${3:false}`!p snip.rv = '"' if t[3] else ""``!p snip.rv=' id="' if t[4] else ""`${4:name}`!p snip.rv = '"' if t[4] else ""``!p snip.rv=' class="' if t[5] else ""`${5:name}`!p snip.rv = '"' if t[5] else ""`>
+	${VISUAL}$0
+</`!p snip.rv=match.group(0);`>
+endsnippet
+
+snippet "li" "li" r
+<`!p snip.rv=match.group(0);``!p snip.rv=' data-role="' if t[1] else ""`${1:list-divider}`!p snip.rv='"' if t[1] else ""`>${VISUAL}$0</`!p snip.rv=match.group(0);`>
+endsnippet
+
+snippet a "page a" i
+<a href="${1:}"`!p snip.rv=' data-transition="' if t[2] else ""`${2:fade}`!p snip.rv='"' if t[2] else ""`>${3:link}</a>${VISUAL}${0}
+endsnippet
+
+snippet input "input" i
+<input type="${1:button}"`!p snip.rv=' placeholder="' if t[2] else ""`${2:content}`!p snip.rv='"' if t[2] else ""`>${VISUAL}${0}
+endsnippet
