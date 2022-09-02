@@ -145,7 +145,7 @@ let g:kolor_alternative_matchparen=0    " Gray 'MatchParen' color. Default: 0
 
 " highlight current line
 set cursorline
-hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+hi CursorLine cterm=NONE ctermbg=238 guibg=NONE
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                              Plugin Settings                               "
