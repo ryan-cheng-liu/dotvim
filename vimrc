@@ -30,8 +30,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Auto Complete http://www.vim.org/scripts/script.php?script_id=2540
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+" Plugin 'SirVer/ultisnips'
+" Plugin 'honza/vim-snippets'
 
 " Auto Complete PopUp
 Plugin 'vim-scripts/AutoComplPop'
@@ -142,6 +142,10 @@ let g:kolor_italic=1                    " Enable italic. Default: 1
 let g:kolor_bold=1                      " Enable bold. Default: 1
 let g:kolor_underlined=0                " Enable underline. Default: 0
 let g:kolor_alternative_matchparen=0    " Gray 'MatchParen' color. Default: 0
+
+" highlight current line
+set cursorline
+hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                              Plugin Settings                               "
