@@ -30,8 +30,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Auto Complete http://www.vim.org/scripts/script.php?script_id=2540
-" Plugin 'SirVer/ultisnips'
-" Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " Auto Complete PopUp
 Plugin 'vim-scripts/AutoComplPop'
