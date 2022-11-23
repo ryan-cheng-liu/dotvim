@@ -160,17 +160,16 @@ hi CursorLine cterm=NONE ctermbg=238 guibg=NONE
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
+"-- FOLDING --
+set foldmethod=indent " syntax highlighting items specify folds
+set foldcolumn=1 " defines 1 col at window left, to indicate folding
+set foldlevelstart=99 " start file with all folds opened
+
 " reset the cursor on start (for older versions of vim, usually not required)
 augroup myCmds
 au!
 autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
-
-"-- FOLDING --
-set foldmethod=syntax " syntax highlighting items specify folds
-set foldcolumn=1 " defines 1 col at window left, to indicate folding
-let javaScript_fold=1 " activate folding by JS syntax
-set foldlevelstart=99 " start file with all folds opened
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                              Plugin Settings                               "
