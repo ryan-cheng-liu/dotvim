@@ -91,9 +91,9 @@ map <C-u> :set fileencoding=utf8
 map <C-b> :set fileencoding=big5
 
 " Tab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab " tab to spaces
 set smarttab " Be smart when using tabs ;)
 
